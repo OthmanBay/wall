@@ -7,8 +7,8 @@
 <body>
 
 <div class="topnav" id="myTopnav">
-  <a href="index.html" >Home</a>
-  <a href="signup.html">Signup</a>
+  <a href="index.php" >Home</a>
+  <a href="signup.php">Signup</a>
   <a href="#contact">Contact</a>
   <a href="#about">About</a>
   <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
@@ -19,7 +19,7 @@
   <div class="container">
 
         <h2>Signup</h2>
-        <form  action="includes/signup.inc.php" method="post">
+        <form action="../includes/signup.inc.php" method="post">
           <input type="text" name= "first" placeholder="Firstname">
           <input type="text" name= "last" placeholder="Lastname">
           <input type="email" name= "email" placeholder="E-mail">

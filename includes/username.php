@@ -1,10 +1,14 @@
 <?php
 include 'dhb.inc.php';
-$uid =  $_GET['uid'];
+session_start();
+$uid =  $_SESSION['user_uid'];
 
 
-$query = "UPDATE users SET uid = '$uid' WHERE id = '$id'";
+$query = "UPDATE users SET uid = 'user_uid' WHERE id = 'id'";
+
+
 
 $result = mysqli_query($conn,$query) or die ('Error Updating');
+echo 'Your username is' ;
 
-header("Location: ../profile.php");
+header("Location: ../public/profile.php");
